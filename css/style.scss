@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+
+        &-track {
+            background-color: var(--bg-dark1);
+            border-radius: var(--quadrado);
+        }
+
+        &-thumb {
+            background-color: var(--bg-dark3);
+            border-radius: var(--quadrado);
+        }
+
+        &-thumb:hover {
+            background-color: var(--color-jq);
+        }
+
+    }
+}
+
+:root{
+    // cores
+    --color-border: #0765a8;
+    --color-title-dark: #fff;
+    --color-text-dark: #aaa;
+    --color-border-dark: #333;
+    --bg-dark0: #151515;
+    --bg-dark1: #202020;
+    --bg-dark2: #252525;
+    --bg-dark3: #303030;
+    --identificador: red;
+
+    // Tamanho do texto
+    --title-h1: 2rem;
+    --title-h2: 1.5rem;
+    --title-h3: 1.3rem;
+    --title-h4: 1.2rem;
+    --title-h5-h6: 1.1rem;
+    --code-size: 0.9rem;
+
+    // Fontes
+    --title: 'Roboto', 'Ubuntu', sans-serif;
+    --texto: 'Ubuntu', sans-serif;
+
+    // Botão jQuery
+    --color-jq: #0765a8;
+    --color-jq-hover: #fff;
+
+    // Preenchimentos
+    --padding-contall: 20px;
+    --padding-contw: 0 20px;
+    --padding-conth: 20px 0;
+    --padding-botao: 10px 20px;
+
+    // Espaçamento
+    --margin-contall: 20px;
+    --margin-contw: 0 20px;
+    --margin-conth: 20px 0;
+    --gap-min: 10px;
+    --gap-med: 20px;
+    --gap-max: 40px;
+
+    // Tamanho do conteúdo
+    --largura-content: 1440px;
+
+    // Formas
+    --quadrado: 5px;
+    --redondo: 20px;
+    --circle: 50%;
+}
+
+body{
+    background-color: var(--bg-dark0);
+}
