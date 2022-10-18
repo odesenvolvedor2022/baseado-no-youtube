@@ -33,7 +33,7 @@ $(document).ready(function(){
     /*$('.btn').click//clique
     (function(){
         $('.container').toggle//alternar
-        //Aqui dentro podemos passar parametros como velocidade de execução: 'slow', 'fast' ou tempo em milesemos
+        //Aqui dentro podemos passar parametros como velocidade de execução e também um retorno quando finalizar a execução da função (call-back): 'slow', 'fast' ou tempo em milesemos
         ('fast');
     });*/
 

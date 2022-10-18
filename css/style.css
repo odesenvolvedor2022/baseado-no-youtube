@@ -61,10 +61,11 @@ body {
   background-color: var(--bg-dark0);
   padding: var(--padding-contall);
   font-family: var(--texto);
+  width: calc(100vw - 12px);
 }
 body main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: var(--gap-med);
 }
 body input {
@@ -87,7 +88,7 @@ body .classe-teste {
   font-weight: bold;
   border-radius: var(--quadrado);
 }
-body .btn {
+body button.btn {
   background-color: var(--bg-dark3);
   padding: var(--padding-btn);
   color: var(--color-title-dark);
@@ -95,9 +96,86 @@ body .btn {
   border-radius: var(--quadrado);
   border: none;
   cursor: pointer;
-  max-width: 180px;
+  width: 100%;
 }
-body .container {
+body section.section {
   display: grid;
   row-gap: var(--gap-min);
+}
+body section.section05 {
+  width: 100%;
+  max-width: 1080px;
+  text-align: center;
+}
+body section.section05 .slide {
+  background-color: var(--bg-dark2);
+  text-align: center;
+  padding: var(--padding-contall);
+  cursor: pointer;
+  width: 100%;
+  max-width: 920px;
+  font-size: var(--title-h3);
+  font-weight: bold;
+  position: relative;
+}
+body section.section05 .content-cards {
+  display: flex;
+  gap: var(--gap-min);
+  justify-content: center;
+  display: none;
+  padding-top: var(--padding-contall);
+  align-items: flex-end;
+}
+body section.section05 .content-cards div, body section.section05 .content-cards .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-min);
+  position: relative;
+  width: 33%;
+  max-width: 300px;
+}
+body section.section05 .content-cards div-yellow, body section.section05 .content-cards .container-yellow {
+  background-color: yellow;
+}
+body section.section05 .content-cards div-yellow .div05 p, body section.section05 .content-cards .container-yellow .div05 p {
+  color: var(--bg-dark0);
+}
+body section.section05 .content-cards div-yellow button, body section.section05 .content-cards .container-yellow button {
+  color: var(--bg-dark0);
+}
+body section.section05 .content-cards div-green, body section.section05 .content-cards .container-green {
+  background-color: green;
+}
+body section.section05 .content-cards div-blue, body section.section05 .content-cards .container-blue {
+  background-color: blue;
+}
+body section.section05 .content-cards div .mascara, body section.section05 .content-cards .container .mascara {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: var(--bg-dark0);
+}
+body section.section05 .content-cards div .div05, body section.section05 .content-cards .container .div05 {
+  width: 100%;
+  height: 250px;
+  border-radius: var(--quadrado);
+  background-color: inherit;
+  font-size: var(--title-h4);
+}
+body section.section05 .content-cards div .div05 p, body section.section05 .content-cards .container .div05 p {
+  display: flex;
+  text-align: center;
+  height: inherit;
+  align-items: center;
+  color: var(--color-title-dark);
+  padding: var(--padding-contw);
+}
+body section.section05 .content-cards div button, body section.section05 .content-cards .container button {
+  width: 100%;
+  background-color: inherit;
+  z-index: 1;
+  font-size: var(--title-h4);
+}
+body section.section05 .content-cards div button.btn-show, body section.section05 .content-cards div button.btn-fadein, body section.section05 .content-cards .container button.btn-show, body section.section05 .content-cards .container button.btn-fadein {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

@@ -1,103 +1,190 @@
 // Curso de jQuery
 
-// Aula 04 - Eventos
+// Aula 05 - Efeitos e animações
 $(document).ready(function(){
-    
-    $('p').html('Elemento selecionado por tag');
 
-    $('#teste04').html('Elemento selecionado por id');
-
-    $('.teste04').html('Elemento selecionado por classe');
+    $(`.container-yellow, .container-green, .container-blue`).append(
+        /*`<button class="btn-hide">Hide</button>
+        <button class="btn-show">Show</button>
+        <button class="btn-fadein">FadeIn</button>
+        <button class="btn-fadeout">FadeOut</button>*/
+        `<button class="btn-toggle">Toggle</button>
+        <button class="btn-fadetoggle">FadeToggle</button>`);
 
     $('button').addClass('btn');
 
-    $('div').addClass('container');
+    // ----------------------------------------------
+    // Yellow
+    // ----------------------------------------------
 
-    // Eventos no javascript puro:
-    // documento.querySelector('.btn').addEventListenner
-
-    // ---------------------------------------
-    // Eventos no jQuery:
-    // ---------------------------------------
-    // Clique: .click
-    $('p').click(function(){
-        $(this).html('Mudei quando fui clicado!');
+    // hide
+    $(`.container-yellow .btn-hide`).click(function(){
+        $(`#yellow, .container-yellow .btn-hide`).hide('fast'/*, function(){
+            alert('Ocultado com sucesso!');
+        }*/);
+        $('.container-yellow .btn-show').show('fast');
     });
 
-    // Clique duplo: .dblclick
-    $('p').dblclick(function(){
-        $(this).html('Mudei quando recebi um clique duplo!');
+    // show
+    $(`.container-yellow .btn-show`).click(function(){
+        $(`#yellow, .container-yellow .btn-hide`).show('fast'/*,function(){
+            alert('Mostrado com sucesso!')
+        }*/);
+        $('.container-yellow .btn-show').hide('fast');
     });
 
-    // Clique com Toggle:
-    /*$('.btn').click//clique
-    (function(){
-        $('.container').toggle//alternar
-        //Aqui dentro podemos passar parametros como velocidade de execução: 'slow', 'fast' ou tempo em milesemos
-        ('fast');
-    });*/
-
-    // Também é possível selecionar vários elementos com o uso das crases ``
-    $('.btn').click(function(){
-        $(`.container, h1`).toggle('fast');
+    // toggle
+    $(`.container-yellow .btn-toggle`).click(function(){
+        $('#yellow').toggle('fast'/*, function(){
+            alert('Sucesso!');
+        }*/);
     });
 
-    // Ao entar com o mouse: .mouseenter
-    $('.container').mouseenter(function(){
-        $(this).css('background','red');
+    // fadeIn
+    $(`.container-yellow .btn-fadein`).click(function(){
+        $(`#yellow`).fadeIn('fast'/*, function(){
+            alert('Ocultado com sucesso!');
+        }*/);
+        $('.container-yellow .btn-fadeout, .container-yellow .btn-fadein').toggle('fast');
     });
 
-    // Ao sair com o mouse: .mouseleave
-    $('.container').mouseleave(function(){
-        $(this).css('background', 'initial');
+    // fadeOut
+    $(`.container-yellow .btn-fadeout`).click(function(){
+        $(`#yellow, .container-yellow .btn-fadeout`).fadeOut('fast'/*,function(){
+            alert('Mostrado com sucesso!')
+        }*/);
+        $('.container-yellow .btn-fadein').toggle('fast');
     });
 
-    // Atalho do .mouseenter com .mouseleave: .hover
-    $('.container').hover(
-        function(){ //está será interpretada como .mouseenter
-            $(this).css('background','red');
-        },
-
-        function(){ //está será interpretada como .mouseleave
-            $(this).css('background','initial');
-        }
-    );
-
-    // Ao clique do mouse: .mousedown
-    $('.container').mousedown(function(){
-        $(this).css('gap','40px');
+    // fadeToggle
+    $(`.container-yellow .btn-fadetoggle`).click(function(){
+        $(`#yellow`).fadeToggle('fast'/*,function(){
+            alert('Mostrado com sucesso!')
+        }*/);
     });
 
-    // Ao soltar o clique do mouse: .mouseup
-    $('.container').mouseup(function(){
-        $(this).css('gap','initial');
+
+    
+    // ----------------------------------------------
+    // Green
+    // ----------------------------------------------
+
+    // hide
+    $(`.container-green .btn-hide`).click(function(){
+        $(`#green, .container-green .btn-hide`).hide('fast'/*, function(){
+            alert('Ocultado com sucesso!');
+        }*/);
+        $('.container-green .btn-show').show('fast');
     });
 
-    // Ao focar: .focus
-    $('#input04').focus(function(){
-        $(this).css('background','#101010');
+    // show
+    $(`.container-green .btn-show`).click(function(){
+        $(`#green, .container-green .btn-hide`).show('fast'/*,function(){
+            alert('Mostrado com sucesso!')
+        }*/);
+        $('.container-green .btn-show').hide('fast');
     });
 
-    // Ao tirar o foco: .blur
-    $('#input04').blur(function(){
-        $(this).css('background', 'var(--bg-dark0)');
-        $(this).css('color','white');
-        $(this).css('border','none')
+    // toggle
+    $(`.container-green .btn-toggle`).click(function(){
+        $('#green').toggle('fast'/*, function(){
+            alert('Sucesso!');
+        }*/);
     });
 
-    // Metodo .on
-    $('.btn').on({
-        mouseenter: function(){
-            //oque vai acontecer...
-        },
-        mouseleave: function(){
-            //oque vai acontecer...
-        },
-        mousedown: function(){
-            //oque vai acontecer...
-        }
+    // fadeIn
+    $(`.container-green .btn-fadein`).click(function(){
+        $(`#green`).fadeIn('fast'/*, function(){
+            alert('Ocultado com sucesso!');
+        }*/);
+        $('.container-green .btn-fadeout, .container-green .btn-fadein').toggle('fast');
+    });
 
-        // OBS: podemos colocar quantos eventos quisermos
-    })
+    // fadeOut
+    $(`.container-green .btn-fadeout`).click(function(){
+        $(`#green, .container-green .btn-fadeout`).fadeOut('fast'/*,function(){
+            alert('Mostrado com sucesso!')
+        }*/);
+        $('.container-green .btn-fadein').toggle('fast');
+    });
+
+    // fadeToggle
+    $(`.container-green .btn-fadetoggle`).click(function(){
+        $(`#green`).fadeToggle('fast'/*,function(){
+            alert('Mostrado com sucesso!')
+        }*/);
+    });
+
+
+
+    // ----------------------------------------------
+    // Blue
+    // ----------------------------------------------
+
+    // hide
+    $(`.container-blue .btn-hide`).click(function(){
+        $(`#blue, .container-blue .btn-hide`).hide('fast'/*, function(){
+            alert('Ocultado com sucesso!');
+        }*/);
+        $('.container-blue .btn-show').show('fast');
+    });
+
+    // show
+    $(`.container-blue .btn-show`).click(function(){
+        $(`#blue, .container-blue .btn-hide`).show('fast'/*,function(){
+            alert('Mostrado com sucesso!')
+        }*/);
+        $('.container-blue .btn-show').hide('fast');
+    });
+
+    // toggle
+    $(`.container-blue .btn-toggle`).click(function(){
+        $('#blue').toggle('fast'/*, function(){
+            alert('Sucesso!');
+        }*/);
+    });
+
+    // fadeIn
+    $(`.container-blue .btn-fadein`).click(function(){
+        $(`#blue`).fadeIn('fast'/*, function(){
+            alert('Ocultado com sucesso!');
+        }*/);
+        $('.container-blue .btn-fadeout, .container-blue .btn-fadein').toggle('fast');
+    });
+
+    // fadeOut
+    $(`.container-blue .btn-fadeout`).click(function(){
+        $(`#blue, .container-blue .btn-fadeout`).fadeOut('fast'/*,function(){
+            alert('Mostrado com sucesso!')
+        }*/);
+        $('.container-blue .btn-fadein').toggle('fast');
+    });
+
+    // fadeToggle
+    $(`.container-blue .btn-fadetoggle`).click(function(){
+        $(`#blue`).fadeToggle('fast'/*,function(){
+            alert('Mostrado com sucesso!')
+        }*/);
+    });
+
+    // slideDown, slideUp e slideToggle
+    $('.slide').click(function(){
+        $('.content-cards').slideToggle('slow').css('display','flex');
+    });
+
+    $('.div05').html('<p>Selecione um dos efeitos abaixo para visualizar a execução</p>');
+
+    // animate
+    $('.slide').click(function(){
+        $(this).animate({
+            top: '5px',
+        });
+    });
+
+    $('.slide').click(function(){
+        $(this).animate({
+            top: '0px',
+        });
+    });
 
 });

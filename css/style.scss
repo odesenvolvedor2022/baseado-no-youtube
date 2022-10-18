@@ -82,10 +82,12 @@ body{
     background-color: var(--bg-dark0);
     padding: var(--padding-contall);
     font-family: var(--texto);
+    width: calc(100vw - 12px);
 
     main{
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
+        justify-content: center;
         gap: var(--gap-med);
     }
 
@@ -113,20 +115,123 @@ body{
         border-radius: var(--quadrado);
     }
 
-    .btn{
-        background-color: var(--bg-dark3);
-        padding: var(--padding-btn);
-        color: var(--color-title-dark);
-        text-decoration: none;
-        border-radius: var(--quadrado);
-        border: none;
-        cursor: pointer;
-        max-width: 180px;
+    button{
+
+        &.btn{
+            background-color: var(--bg-dark3);
+            padding: var(--padding-btn);
+            color: var(--color-title-dark);
+            text-decoration: none;
+            border-radius: var(--quadrado);
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
     }
 
-    .container{
-        display: grid;
-        row-gap: var(--gap-min);
-    }
+    section{
+        
+        &.section{
+            display: grid;
+            row-gap: var(--gap-min);
+
+            &05{
+                width: 100%;
+                max-width: 1080px;
+                text-align: center;
+                // background-color: red;
+                
+                .slide{
+                    background-color: var(--bg-dark2);
+                    text-align: center;
+                    padding: var(--padding-contall);
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 920px;
+                    font-size: var(--title-h3);
+                    font-weight: bold;
+                    position: relative;
+                }
+
+                .content-cards{
+                    display: flex;
+                    gap: var(--gap-min);
+                    justify-content: center;
+                    display: none;
+                    padding-top: var(--padding-contall);
+                    align-items: flex-end;
+
+                    div, .container{
+                        display: flex;
+                        flex-direction: column;
+                        gap: var(--gap-min);
+                        position: relative;
+                        width: 33%;
+                        max-width: 300px;
     
+                        &-yellow{
+                            background-color: yellow;
+
+                            .div05{
+                                p{
+                                    color: var(--bg-dark0);
+                                }
+                            }
+                            
+                            button{
+                                color: var(--bg-dark0);
+                            }
+                        }
+    
+                        &-green{
+                            background-color: green;
+                        }
+    
+                        &-blue{
+                            background-color: blue;
+                        }
+    
+                        .mascara{
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            background-color: var(--bg-dark0);
+                        }
+    
+                        .div05{
+                            width: 100%;
+                            height: 250px;   
+                            border-radius: var(--quadrado);
+                            background-color: inherit;
+                            font-size: var(--title-h4);
+                            
+                            p{
+                                display: flex;
+                                text-align: center;
+                                height: inherit;
+                                align-items: center;
+                                color: var(--color-title-dark);
+                                padding: var(--padding-contw);
+                            }
+                            
+                        }
+    
+                        button{
+                            width: 100%;
+                            background-color: inherit;
+                            z-index: 1;
+                            font-size: var(--title-h4);
+    
+                            &.btn-show, &.btn-fadein{
+                                display: none;
+                            }
+                        }
+    
+                    }
+
+                }
+            }
+        }
+    }
 }
