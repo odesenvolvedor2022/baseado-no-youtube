@@ -119,16 +119,16 @@ body section.section05 .slide {
   position: relative;
 }
 body section.section05 .content-cards {
-  display: flex;
   gap: var(--gap-min);
   justify-content: center;
-  display: none;
   padding-top: var(--padding-contall);
-  align-items: flex-end;
+  position: relative;
+  display: none;
+  height: 374px;
 }
 body section.section05 .content-cards div, body section.section05 .content-cards .container {
-  display: flex;
-  flex-direction: column;
+  max-height: 100%;
+  display: grid;
   gap: var(--gap-min);
   position: relative;
   width: 33%;
@@ -152,6 +152,8 @@ body section.section05 .content-cards div-blue, body section.section05 .content-
 body section.section05 .content-cards div .mascara, body section.section05 .content-cards .container .mascara {
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   position: absolute;
   background-color: var(--bg-dark0);
 }

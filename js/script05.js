@@ -174,17 +174,9 @@ $(document).ready(function(){
 
     $('.div05').html('<p>Selecione um dos efeitos abaixo para visualizar a execução</p>');
 
-    // animate
+    // animate com encadeamento
     $('.slide').click(function(){
-        $(this).animate({
-            top: '5px',
-        });
-    });
-
-    $('.slide').click(function(){
-        $(this).animate({
-            top: '0px',
-        });
+        $(this).animate({top:'10px'},300).animate({top: '0px'},500);
     });
 
 });
