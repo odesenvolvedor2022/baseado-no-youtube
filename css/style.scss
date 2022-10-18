@@ -92,6 +92,7 @@ body{
     input{
         max-width: 300px;
         font-size: var(--title-h4);
+        color: var(--color-text-dark);
     }
 
     h1,h2,h3,h4,h5,h6{
@@ -127,4 +128,5 @@ body{
         display: grid;
         row-gap: var(--gap-min);
     }
+    
 }

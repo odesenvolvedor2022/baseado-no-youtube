@@ -70,6 +70,7 @@ body main {
 body input {
   max-width: 300px;
   font-size: var(--title-h4);
+  color: var(--color-text-dark);
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: var(--title);
