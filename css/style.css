@@ -29,6 +29,7 @@
   --bg-dark1: #202020;
   --bg-dark2: #252525;
   --bg-dark3: #303030;
+  --bg-teste: green;
   --identificador: red;
   --title-h1: 2rem;
   --title-h2: 1.5rem;
@@ -43,7 +44,7 @@
   --padding-contall: 20px;
   --padding-contw: 0 20px;
   --padding-conth: 20px 0;
-  --padding-botao: 10px 20px;
+  --padding-btn: 10px 20px;
   --margin-contall: 20px;
   --margin-contw: 0 20px;
   --margin-conth: 20px 0;
@@ -58,4 +59,44 @@
 
 body {
   background-color: var(--bg-dark0);
+  padding: var(--padding-contall);
+  font-family: var(--texto);
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-med);
+}
+body input {
+  max-width: 300px;
+  font-size: var(--title-h4);
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: var(--title);
+  color: var(--color-title-dark);
+}
+body p {
+  color: var(--color-text-dark);
+}
+body .classe-teste {
+  background-color: var(--bg-teste);
+  padding: var(--padding-btn);
+  display: inline-block;
+  color: var(--bg-dark0);
+  font-weight: bold;
+  border-radius: var(--quadrado);
+}
+body .btn {
+  background-color: var(--bg-dark3);
+  padding: var(--padding-btn);
+  color: var(--color-title-dark);
+  text-decoration: none;
+  border-radius: var(--quadrado);
+  border: none;
+  cursor: pointer;
+  max-width: 180px;
+}
+body .container {
+  display: grid;
+  row-gap: var(--gap-min);
 }/*# sourceMappingURL=style.css.map */
