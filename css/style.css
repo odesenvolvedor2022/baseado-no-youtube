@@ -63,10 +63,35 @@ body {
   font-family: var(--texto);
   width: calc(100vw - 12px);
 }
+body a {
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
+body a:hover {
+  color: var(--color-jq);
+}
+body .btn {
+  background-color: var(--bg-dark3);
+  padding: var(--padding-btn);
+  color: var(--color-title-dark);
+  text-decoration: none;
+  border-radius: var(--quadrado);
+  border: none;
+  max-width: 300px;
+  margin: 0 auto;
+  transition: 0.3s ease;
+}
+body .btn:hover {
+  background-color: var(--color-jq);
+  color: var(--color-title-dark);
+  transform: scale(1.01);
+}
 body main {
   display: flex;
   justify-content: center;
+  align-content: center;
   gap: var(--gap-med);
+  min-height: 100vh;
 }
 body input {
   max-width: 300px;
@@ -180,4 +205,24 @@ body section.section05 .content-cards div button, body section.section05 .conten
 }
 body section.section05 .content-cards div button.btn-show, body section.section05 .content-cards div button.btn-fadein, body section.section05 .content-cards .container button.btn-show, body section.section05 .content-cards .container button.btn-fadein {
   display: none;
+}
+body section.section06 {
+  text-align: center;
+  max-width: 800px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  row-gap: var(--gap-med);
+}
+body section.section06 input {
+  max-width: 300px;
+  height: 40px;
+  padding: var(--padding-btn);
+  border: none;
+  border-radius: var(--quadrado);
+  font-size: var(--title-h4);
+  color: var(--color-text-dark);
+}
+body section.section06 img#jquery {
+  max-width: 200px;
 }/*# sourceMappingURL=style.css.map */
