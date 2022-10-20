@@ -245,6 +245,13 @@ body section.section06 {
   justify-items: center;
   row-gap: var(--gap-med);
 }
+body section.section06 hr {
+  width: 100%;
+  border: none;
+  height: 2px;
+  background-color: var(--bg-dark2);
+  border-radius: 5px;
+}
 body section.section06 input {
   max-width: 300px;
   height: 40px;
@@ -256,4 +263,44 @@ body section.section06 input {
 }
 body section.section06 img#jquery {
   max-width: 200px;
+}
+body section.section06 div {
+  display: flex;
+  gap: var(--gap-med);
+  width: 80%;
+}
+body section.section06 div #addDiv {
+  background-color: var(--color-jq);
+}
+body section.section06 div #remDiv {
+  background-color: #5207a8;
+}
+body section.section06 div#divs {
+  display: flex;
+  flex-wrap: wrap;
+}
+body section.section06 div#divs div {
+  max-width: 8.2%;
+  height: 30px;
+  border-radius: var(--quadrado);
+}
+body section.section06 div#divs div.append {
+  background-color: var(--color-jq);
+}
+body section.section06 div#divs div.prepend {
+  background-color: #5207a8;
+}
+body section.section06 div#divs div.new {
+  -webkit-animation: newprepend 0.6s ease;
+          animation: newprepend 0.6s ease;
+}
+@-webkit-keyframes newprepend {
+  from {
+    background-color: white;
+  }
+}
+@keyframes newprepend {
+  from {
+    background-color: white;
+  }
 }/*# sourceMappingURL=style.css.map */
