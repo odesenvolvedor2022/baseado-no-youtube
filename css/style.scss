@@ -32,6 +32,7 @@
     --color-title-dark: #fff;
     --color-text-dark: #aaa;
     --color-border-dark: #333;
+    --bg-dark: #050505;
     --bg-dark0: #151515;
     --bg-dark1: #202020;
     --bg-dark2: #252525;
@@ -160,6 +161,42 @@ body{
     }
 
     section{
+
+        &#atalhos-vscode{
+            width: 100%;
+            max-width: 1000px;
+
+            h1{
+                padding-bottom: var(--padding-contall);
+            }
+
+            hr{
+                background-color: var(--bg-dark);
+                border: none;
+                height: 2px;
+                border-radius: 10%;
+            }
+
+            p{
+                // display: inline-block;
+                align-items: center;
+                column-gap: var(--gap-med);
+                margin: var(--margin-contall);
+            }
+
+            span{
+                display: inline-flex;
+                margin: (var(--margin-contall));
+                background-color: var(--bg-dark2);
+                padding: var(--padding-btn);
+                border-radius: var(--quadrado);
+                text-transform: uppercase;
+
+                &:first-child{
+                    margin-left: calc(var(--margin-contall) - var(--margin-contall));
+                }
+            }
+        }
         
         &.section{
             display: grid;
