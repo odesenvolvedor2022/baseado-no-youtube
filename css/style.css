@@ -154,6 +154,22 @@ body section#atalhos-vscode span {
 body section#atalhos-vscode span:first-child {
   margin-left: calc(var(--margin-contall) - var(--margin-contall));
 }
+body section .campo-form {
+  background-color: #151515;
+  border: none;
+  padding: var(--padding-btn);
+  width: 100%;
+}
+body section .card {
+  min-width: 400px;
+  min-height: 340px;
+  background-color: var(--bg-dark1);
+  padding: var(--padding-contall);
+  border-radius: var(--quadrado);
+  text-align: center;
+  display: grid;
+  gap: var(--gap-med);
+}
 body section.section {
   display: grid;
   row-gap: var(--gap-min);
@@ -373,19 +389,37 @@ body section.section07 .div07 #form-viacep form {
   gap: var(--gap-min);
   align-items: center;
 }
-body section.section07 .div07 #form-viacep form .campo-form {
-  background-color: #151515;
-  border: none;
-  padding: var(--padding-btn);
-  width: 100%;
-}
 body section.section07 .div07 .hidden {
   display: none;
 }
-body section.section07 .card {
-  width: 300px;
-  max-width: 400px;
-  min-height: 340px;
+body section.section08e09 {
+  align-self: center;
+}
+body section.section08e09 #div08e09 #divtabela {
+  display: grid;
+  gap: var(--gap-min);
+}
+body section.section08e09 #div08e09 #divtabela input {
+  min-width: 100%;
+  max-height: 42.75px;
+}
+body section.section08e09 #div08e09 #divtabela table {
+  color: var(--color-text-dark);
+  border-collapse: collapse;
+  border: 1px solid var(--bg-dark3);
+  padding: var(--padding-btn);
+}
+body section.section08e09 #div08e09 #divtabela table thead {
+  color: var(--color-text-dark);
+  font-weight: bolder;
+  background-color: var(--bg-dark0);
+}
+body section.section08e09 #div08e09 #divtabela table th, body section.section08e09 #div08e09 #divtabela table td {
+  padding: var(--padding-btn);
+  border: 1px solid var(--bg-dark3);
+}
+body section.section08e09 #div08e09 #divtabela table tr td {
+  background-color: var(--bg-dark1);
 }
 
 body.light {

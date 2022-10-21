@@ -197,6 +197,24 @@ body{
                 }
             }
         }
+
+        .campo-form{
+            background-color: #151515;
+            border: none;
+            padding: var(--padding-btn);
+            width: 100%;
+        }
+
+        .card{
+            min-width: 400px;
+            min-height: 340px;
+            background-color: var(--bg-dark1);
+            padding: var(--padding-contall);
+            border-radius: var(--quadrado);
+            text-align: center;
+            display: grid;
+            gap: var(--gap-med);
+        }
         
         &.section{
             display: grid;
@@ -459,13 +477,6 @@ body{
                         flex-direction: column;
                         gap: var(--gap-min);
                         align-items: center;
-
-                        .campo-form{
-                            background-color: #151515;
-                            border: none;
-                            padding: var(--padding-btn);
-                            width: 100%;
-                        }
                     }
 
                     .hidden{
@@ -474,12 +485,47 @@ body{
 
                 }
 
-                .card{
-                    width: 300px;
-                    max-width: 400px;
-                    min-height: 340px;
-                }
+            }
 
+            &08e09{
+                align-self: center;
+
+                #div08e09{
+
+                    #divtabela{
+                        display: grid;
+                        gap: var(--gap-min);
+                        // *{border: 1px solid var(--bg-dark3);}
+
+                        input{
+                            min-width: 100%;
+                            max-height: 42.75px;
+                        }
+                        
+                        table{
+                            color: var(--color-text-dark);
+                            border-collapse: collapse;
+                            border: 1px solid var(--bg-dark3);
+                                padding: var(--padding-btn);
+
+                            thead{
+                                color: var(--color-text-dark);
+                                font-weight: bolder;
+                                background-color: var(--bg-dark0);
+                            }
+                    
+                            th,td{
+                                padding: var(--padding-btn);
+                                border: 1px solid var(--bg-dark3);
+                            }
+                            tr td{
+                                background-color: var(--bg-dark1);
+                            }
+                        }
+                    }
+
+                }
+                
             }
 
         }
