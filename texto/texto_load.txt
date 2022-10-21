@@ -1,0 +1,8 @@
+<h3>Uhul! como o AJAX é legal!</h3>
+<p>Este conteúdo foi puxado de um arquivo txt, através do método load. Veja também o método get</p>
+<button class="btn" id="voltar_inicio">Voltar</button><br><br>
+<button class="btn" id="get">get</button>
+
+
+
+<script src="../../js/script07.js"></script>

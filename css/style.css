@@ -328,6 +328,65 @@ body section.section06 div#temaToggle #toggleTema {
   background-color: white;
   color: var(--bg-dark0);
 }
+body section.section07 {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+}
+body section.section07 .div07 {
+  background-color: var(--bg-dark1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: var(--gap-med);
+  padding: var(--padding-contall);
+  border-radius: var(--quadrado);
+}
+body section.section07 .div07 h1 {
+  font-size: 4rem;
+}
+body section.section07 .div07 p {
+  color: white;
+  margin-bottom: var(--margin-contall);
+}
+body section.section07 .div07 .btn {
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 50%;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+body section.section07 .div07 .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+  transform: scale(1.2);
+}
+body section.section07 .div07 #form-viacep form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-min);
+  align-items: center;
+}
+body section.section07 .div07 #form-viacep form .campo-form {
+  background-color: #151515;
+  border: none;
+  padding: var(--padding-btn);
+  width: 100%;
+}
+body section.section07 .div07 .hidden {
+  display: none;
+}
+body section.section07 .card {
+  width: 300px;
+  max-width: 400px;
+  min-height: 340px;
+}
 
 body.light {
   background-color: #f0f0f0;
