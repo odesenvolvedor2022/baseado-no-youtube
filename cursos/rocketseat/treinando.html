@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/rocketseat/style.css">
+    <title>Rocketseat</title>
+</head>
+<body>
+    <main>
+        <Section id="att_globais">
+            <div class="titleContainer">
+                <h2 class="title">Atributos Globais</h2>
+            </div>
+            <div id="descriptionAtt" hidden>
+                <p>Atributos globais são atributos aplicáveis em todas as Tags, sendo as principais:</p>
+
+                <p><span class="att">class</span> — além de classificar as Tags, é usada para aplicar estilo css e também para acessar com o Java Script.</p>
+<pre>
+<code>
+    &lt;div class="conteúdo"&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+                <p><span class="att">contenteditable</span> — usado para editar o conteúdo da página, porém não é mantido após salvar.</p>
+<pre>
+<code>
+    &lt;div contentedtable="true"&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+                <p><span class="att">data-*</span> — usado para expandir os tipos de atributos que podemos usar para fazer mais tarde lógica no Java Script , utilizado em css também.</p>
+<pre>
+<code>
+    &lt;div data-qualquercoisaaqui=""&gt;
+    &lt;/div&gt;
+<p>
+    Escrito com "-" ou tudo junto.
+</p>
+</code>
+</pre>
+                <p><span class="att">hidden</span> — usado para esconder uma Tag.</p>
+<pre>
+<Code>
+    &lt;div class="carrinho" hidden&gt;
+    conteúdo
+    &lt;/div&gt;
+</Code>
+</pre>
+                <p><span class="att">id</span> — usado apenas 1 por Tag para identificação, para também mais tarde usar no Java Script e css.</p>
+<pre>
+<code>
+    &lt;div id="texto"&gt;
+    conteúdo
+    &lt;/&gt;>
+</code>
+</pre>
+
+<pre>
+<code>
+    &lt;div id="texto2"&gt;
+    conteúdo
+    &lt;/div&gt;
+</code>
+</pre>
+                <p><span class="att">style</span> — aplica a estilização na Tag, normalmente não se usa "style" dentro da Tag, mas sim em arquivos externos.</p><br>
+
+                <p><span class="att">tabindex</span> — usado para ordenar o Tab na página.</p>
+<pre>
+<code>
+    &lt;div tabindex="3"&gt;
+    &lt;/div&gt;
+    
+    &lt;div tabindex="1"&gt;
+    &lt;/div&gt;
+    
+    &lt;div tabindex="2"&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+<p><span class="att">title</span> — serve para definir um título para a Tag, quando colocamos o mouse descansando em cima do conteúdo da página.</p>
+<p>Se você quiser estudar outros Atributos Globais vá ao site <a href="https://developer.mozilla.org/pt-BR">https://developer.mozilla.org/pt-BR</a>.</p>
+        </Section>
+    </main>
+
+    <script src="../../js/jquery-3.6.1.js"></script>
+    <script src="../../js/js_rocketseat/rocketseat.js"></script>
+</body>
+</html>
